@@ -1264,7 +1264,6 @@ void ElfFile<ElfFileParamNames>::modifyRPath(RPathOp op,
     unsigned int rpathSize = 0;
     if (rpath) {
         rpathSize = strlen(rpath);
-        memset(rpath, 'X', rpathSize);
     }
 
     debug("new rpath is '%s'\n", newRPath.c_str());
